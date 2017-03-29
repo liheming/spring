@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    background: #efefef;
+}
+a{
+    text-decoration: none;
+
+}
+a:active{color: #f4f4f4;}
+a:visited{color: #111111}
+
+.header {
+
+    width: auto;
+    height: 120px;
+    background: #f4f4f4   ;
+    position: relative;
+}
+
+.header .logo {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    background: url("../img/logo.png");
+    /*background-color: #703b87;*/
+    width: 180px;
+    height: 80px;
+    display: block;
+}
+
+.header .nav {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    /*background-color: #009900;*/
+    width: 550px;
+    height: 50px;
+
+}
+
+.header .login {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    /*background-color: #ee521c;*/
+    width: 180px;
+    height: 30px;
+
+}
+
+.content {
+
+    margin-top: 50px;
+    width: auto;
+    height: 600px;
+    /*background-color: lightcoral;*/
+}
+
+.language{
+    width: 1060px;
+    height: 350px;
+    margin: 0px 100px;
+    /*background-color: #61B9E9;*/
+}
+.language  .box{
+    height: 350px;
+    width: 500px;
+    margin: 0px 15px;
+    border: 1px;
+    /*background-color: lightblue;*/
+
+}
+.box_jsp{float: left}
+.box_php{ float: left}
+
+.img-login{
+
+    width: 20px;
+    height: 20px;
+}
+.site-footer {
+    width: auto;
+    height: 250px;
+    background-color: greenyellow;
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-right: 120px;
+
+}
+
+li {
+    float: left;
+    display: inline-block;
+    margin: 18px 10px;
+}
+.ul-menu li{
+    margin: 18px 30px;
+}
+
+.li-menu{
+    font-size: 22px;
+
+}
+.p{
+    margin: 10px 10px;
+}
+.copyright{
+
+    font-family: Arial;
+    text-align: center;
+
+
+}
+

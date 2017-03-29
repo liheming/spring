@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+
+</head>
+<body>
+<script charset="UTF-8">
+
+
+
+<% 
+HashMap hashMap;
+String  username=null,email=null,datetime=null ;
+int id=0;
+List<?>  list = JDBCOption.query(SQLConstant.GetAllMessage);
+for (int i = 0; i < list.size(); i++) {
+	 hashMap = (HashMap) list.get(i);
+     // id = (int)  hashMap.get("id");
+     id = (Integer) hashMap.get("id");
+	  username = (String) hashMap.get("username");
+	  email = (String) hashMap.get("email");
+	 datetime = hashMap.get("datetime").toString();
+
+	
+	%>
+			<tr>
+				<td><%=username %></td>
+				<td><%=email %></td>
+				<td><%=datetime %></td>
+				<td><a class="op" href="javascript:doDel()" onclick="">
+						<img src="img/delete.png" style="width: 20px; height: 20px">
+				</a> &nbsp;&nbsp;&nbsp; <a class="op" href="modify.jsp?id=<%=id%>"><img
+						src="img/edit.png" style="width: 20px; height: 20px"></a></td>
+			</tr>
+
+			<%	
+	
+}	
+%>
+
+
+
+    window.load();
+    alert("hello world");
+    window.history.back();
+</script>
+</body>
+</html>
